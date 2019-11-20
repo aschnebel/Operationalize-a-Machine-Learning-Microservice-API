@@ -1,1 +1,13 @@
-<paste log output from Kubernetes-mediated prediction, here>
+Start Pod ...
+pod/udacity-ai created
+Currently running Pods: 
+NAME         READY   STATUS              RESTARTS   AGE
+udacity-ai   0/1     ContainerCreating   0          0s
+Waiting for Pod to get ready... sleep for 5 seconds
+Pod seems to be ready! See:
+NAME         READY   STATUS    RESTARTS   AGE
+udacity-ai   1/1     Running   0          6s
+Now forwarding...
+Forwarding from 127.0.0.1:8000 -> 80
+Forwarding from [::1]:8000 -> 80
+Handling connection for 8000
