@@ -1,13 +1,13 @@
-Start Pod ...
-pod/udacity-ai created
-Currently running Pods: 
-NAME         READY   STATUS              RESTARTS   AGE
-udacity-ai   0/1     ContainerCreating   0          0s
-Waiting for Pod to get ready... sleep for 5 seconds
-Pod seems to be ready! See:
-NAME         READY   STATUS    RESTARTS   AGE
-udacity-ai   1/1     Running   0          6s
-Now forwarding...
-Forwarding from 127.0.0.1:8000 -> 80
-Forwarding from [::1]:8000 -> 80
-Handling connection for 8000
+[2019-11-21 07:31:55,906] INFO in app: JSON payload: 
+{'CHAS': {'0': 0}, 'RM': {'0': 6.575}, 'TAX': {'0': 296.0}, 'PTRATIO': {'0': 15.3}, 'B': {'0': 396.9}, 'LSTAT': {'0': 4.98}}
+[2019-11-21 07:31:55,945] INFO in app: Inference payload DataFrame: 
+   CHAS     RM    TAX  PTRATIO      B  LSTAT
+0     0  6.575  296.0     15.3  396.9   4.98
+[2019-11-21 07:31:55,958] INFO in app: Scaling Payload: 
+   CHAS     RM    TAX  PTRATIO      B  LSTAT
+0     0  6.575  296.0     15.3  396.9   4.98
+[2019-11-21 07:31:55,961] INFO in app: Prediction is: [20.35373177134412]
+127.0.0.1 - - [21/Nov/2019 07:31:55] "POST /predict HTTP/1.1" 200 -
+
+NAME         READY   STATUS    RESTARTS   AGE     IP           NODE       NOMINATED NODE   READINESS GATES
+udacity-ai   1/1     Running   0          3m25s   172.17.0.5   minikube   <none>           <none>
